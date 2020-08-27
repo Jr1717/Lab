@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Create a new event </title>
+
+<link rel="stylesheet" type="text/css" href="design.css">
+
+<script>
+
+function Form() 
+{
+  var a = document.forms["myForm"]["eventtitle"].value;
+  if (a == "") {
+    alert("Please complete the form.");
+    return false;
+  }else {
+	return onclick = alert("Submit?");
+  }
+  var b = document.forms["myForm"]["eventtype"].value;
+  if (b == "") {
+    alert("Please choose an Event Type.");
+    return false;
+  }else {
+	return onclick = alert("Submit?");
+  }
+
+  
+   
+}
+</script>
+
+
+</head>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<body>
+<h1 align="center"> Create a New Event </h1>
+<div align="center"><br/>
+</div>
+</br>
+</br>
+</br>
+</br>
+
+<table width="1000" border="0" align="center">
+
+  <tr>
+    
+    <td width="141"> <label for="events">Event Type: </label></td>
+    <td width="625"><select name="eventtype" id="eventtype" placeholder="Choose one">
+     
+      <option selected="default" disabled="disabled"> Choose One </option>
+      <option value="event">MusicFest</option>
+      <option value="event">Wanderland</option>
+      <option value="event">BMW Car Show</option>
+      <option value="event">NAMM</option>
+   
+    </select>
+  
+  </tr>
+  
+  <tr>
+   	 <td>
+  <label for="Event Title">Event Title:</label></form>
+ 	 </td>
+ 	 <td><input type="text" id="eventtitle" name="eventtitle" value="" />
+     </td>
+	 <td>&nbsp;</td>
+    
+  </tr>
+  
+  <tr>
+    <td>
+  <label for="eventdate">Event Dates:</label></td>
+    <td><input type="text" id="eventdates" name="eventdates" value="" />
+    to <input type="text" id="eventdates" name="eventdates" value="" />
+    <td>&nbsp;</td>
+ 
+  </tr>
+  <tr>
+    <td>
+  <label for="postdate">Posting Date:</label></td>
+  <td><input type="text" id="postdate" name="postdate" value="" />
+    <td>&nbsp;</td>
+    
+  </tr>
+</table>
+
+</form>
+
+</br>
+</br>
+</br>
+<br>
+<table width="1000" border="0" align="center">
+  <tr>
+    <td><input type="checkbox" id="a" name="a" value="1" />
+    <label for="c1"> Is registration required?</label></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="b" name="b" value="2" />
+    <label for="c2"> Is this even associated with any Family Programs?</label></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="c" name="c" value="3" />
+    <label for="c3"> Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="d" name="d" value="4" />
+    <label for="c4"> Is there a point of Contact?</label></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="e" name="e" value="5" />
+Is there a Hosting Command Point of Contract? </td>
+  </tr>
+
+</table>
+
+
+  <div align="center">
+    
+    <input type="submit" onClick="conf()"/>
+    <input type="reset" value="Cancel" />
+
+  </div>
+
+
+
+</body>
+</html>
